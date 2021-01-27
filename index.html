@@ -26,10 +26,7 @@
               </div>
 
               <div class="nav">
-                <i class="fas fa-circle active first"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle last"></i>
+                <i @click="imgIndex = index" v-for="(item, index) in imgs" :class="indexBoleean(index)"></i>
               </div>
             </div>
           </div>

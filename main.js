@@ -8,14 +8,12 @@ var app = new Vue({
     imgIndex: 0,
   },
   methods: {
-    next: function() {
+    next: function() { // Bottoni prev e next per lo slider
       if (this.imgIndex >= this.imgs.length - 1) {
         this.imgIndex = 0;
       }else {
         this.imgIndex += 1;
       }
-
-      console.log(this.imgIndex);
     },
     prev: function() {
       if (this.imgIndex <= 0) {
@@ -23,8 +21,13 @@ var app = new Vue({
       }else {
         this.imgIndex -= 1;
       }
-
-      console.log(this.imgIndex);
+    },
+    indexBoleean: function(index) { //funzione che permette il spostarsi dell'active dei pallini di .nav
+      if (index === this.imgIndex) {
+        return 'active fas fa-circle';
+      }else {
+        return 'fas fa-circle';
+      }
     }
   }
 });
