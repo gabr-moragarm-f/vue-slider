@@ -18,7 +18,7 @@
               </div>
 
               <div class="images">
-                <img class="active first" :src="imgs[imgIndex]" alt="">
+                <img :style="imgSlideTransition" :src="imgs[imgIndex]" alt="">
               </div>
 
               <div @click="next()" class="next">

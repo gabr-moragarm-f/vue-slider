@@ -9,6 +9,7 @@
     margin: 0 auto;
     width: 70%;
     height: 100vh;
+    overflow-x: hidden;
 }
 .slider-wrapper {
     position: relative;
@@ -21,12 +22,10 @@
     text-align: center;
 }
 .slider-wrapper .images img {
-    display: none;
     height: 100%;
+
 }
-.slider-wrapper .images img.active {
-    display: inline-block;
-}
+
 .prev, .next {
     position: absolute;
     color: #565a5c;
